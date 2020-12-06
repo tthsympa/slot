@@ -1,6 +1,7 @@
 import React from 'react'
 import { Field } from 'react-final-form'
 import {
+  Box,
   Text,
   Input,
   Textarea,
@@ -29,7 +30,9 @@ const FormBookingSection = React.memo(
       <Drawer isOpen={isBooking} placement="right" onClose={onClose} size="lg">
         <DrawerOverlay>
           <DrawerContent>
-            <DrawerCloseButton />
+            <Box textAlign="end" mr="24px" mt="8px">
+              <DrawerCloseButton  />
+            </Box>
             <DrawerHeader>
               <Text fontSize="lg" fontWeight="500" textAlign="center" my={4}>
                 Continue your booking
@@ -180,7 +183,6 @@ const FormBookingSection = React.memo(
   },
 )
 export default FormBookingSection
-
 
 function validateCanNotBeEmpty(value) {
   if (!value) {

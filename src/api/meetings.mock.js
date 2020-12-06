@@ -1,6 +1,6 @@
 const now = new Date()
 
-export default {
+const meetings = {
   1234: [
     {
       id: 14,
@@ -47,3 +47,4 @@ export default {
   ],
   8912: [],
 }
+export default meetings

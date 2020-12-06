@@ -1,4 +1,4 @@
-export default {
+const offices = {
   get: [
     {
       id: '1234',
@@ -20,3 +20,4 @@ export default {
     },
   ],
 }
+export default offices

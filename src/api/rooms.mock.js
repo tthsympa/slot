@@ -1,6 +1,6 @@
-export default {
+const rooms = {
   get: {
-    '1234': [
+    1234: [
       {
         id: 1232,
         office: 'Paris',
@@ -26,7 +26,7 @@ export default {
         options: [],
       },
     ],
-    '5678': [
+    5678: [
       {
         id: 1232,
         office: 'Paris',
@@ -40,6 +40,7 @@ export default {
         options: [],
       },
     ],
-    '8912': [],
+    8912: [],
   },
 }
+export default rooms

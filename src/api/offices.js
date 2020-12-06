@@ -1,5 +1,8 @@
 import mock from './offices.mock'
 
-export default () => ({
-  get: async () => Promise.resolve(mock.get),
-})
+function calls() {
+  return {
+    get: async () => Promise.resolve(mock.get),
+  }
+}
+export default calls
