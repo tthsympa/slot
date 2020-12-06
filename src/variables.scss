@@ -1,0 +1,33 @@
+$out-of-range-color: lighten(#333, 40%);
+$out-of-range-bg-color: lighten(#333, 70%);
+
+$calendar-border: #4f0599;
+$cell-border: #4f0599;
+
+$border-color: #4f0599;
+
+$segment-width: percentage(1 / 7);
+
+$time-selection-color: white;
+$time-selection-bg-color: rgba(174, 92, 255, .50);
+$date-selection-bg-color: rgba(174, 92, 255, .10);
+
+
+$event-bg: #AE5CFF;
+$event-border: lighten(#4f0599, 10%);
+$event-outline: #AE5CFF;
+$event-color: #fff;
+$event-border-radius: 5px;
+$event-padding: 2px 5px;
+$event-zindex: 4;
+
+$btn-color: #151a2d;
+$btn-bg: #AE5CFF;
+$btn-border: lighten(#4f0599, 10%);
+
+$current-time-color: #4119da;
+
+$rbc-css-prefix: rbc-i;
+
+$today-highlight-bg: #eaf6ff;
+
