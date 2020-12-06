@@ -15,6 +15,7 @@ const Body = ({ office }) => {
 
   return (
     <DataLoader
+      key={office.id}
       load={async () => {
         const meetings = await api.meetings.get(office.id)
         const rooms = await api.rooms.get(office.id)

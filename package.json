@@ -34,6 +34,7 @@
     "injectSass": "cat ./src/variables.scss > ./node_modules/react-big-calendar/lib/sass/variables.scss",
     "start": "yarn run injectSass && react-scripts start",
     "build": "yarn run injectSass && react-scripts build",
+    "serve": "serve -s build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

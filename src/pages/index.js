@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exat path="/dashboard" component={Dashboard} />
         <Redirect to="/dashboard" />
       </Switch>
     </Router>

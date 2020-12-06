@@ -22,13 +22,6 @@ import Submit from 'components/Submit'
 
 import api from 'api/Client'
 
-function validateCanNotBeEmpty(value) {
-  if (!value) {
-    return 'Can not be empty!'
-  }
-  return undefined
-}
-
 const FormBookingSection = React.memo(
   ({ isBooking = false, onClose = () => {}, reload, slot, rooms, office }) => {
     console.log(slot.string)
@@ -186,5 +179,12 @@ const FormBookingSection = React.memo(
     )
   },
 )
-
 export default FormBookingSection
+
+
+function validateCanNotBeEmpty(value) {
+  if (!value) {
+    return 'Can not be empty!'
+  }
+  return undefined
+}

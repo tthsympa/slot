@@ -10,7 +10,6 @@ html {
 body {
   background-color: #fff;
   color: #5c6275;
-  /* important is for docz */
   font-family: 'Asap', 'System', sans-serif !important;
   overflow: hidden;
   height: 100%;

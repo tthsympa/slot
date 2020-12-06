@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import moment from 'moment'
 import api from 'api/Client'
 
 import Header from './Header'
 import Body from './Body'
-
 
 moment.locale('fr')
 
@@ -21,10 +20,13 @@ const Dashboard = () => {
     if (offices.length === 0) fetchOffices()
   }, [offices])
 
-  const office =
-    offices.find(office => office.id === officeId) ||
-    offices.find(office => office.default) ||
-    {}
+  const office = useMemo(
+    () =>
+      offices.find(office => office.id === officeId) ||
+      offices.find(office => office.default) ||
+      {},
+    [officeId, offices],
+  )
 
   return (
     offices.length > 0 && (
