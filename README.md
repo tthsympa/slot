@@ -2,6 +2,7 @@
 
 Choose a slot, book it, be organized! 
 
+WIP -> must be connected to an API
 ## Local
 
 Clone the repo, and `yarn && yarn start`
