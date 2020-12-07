@@ -31,7 +31,7 @@ jobs:
           file: ./Dockerfile
           pull: true
           tags: tthsympa/slot:latest
-        run: docker push ${{ env.REGISTRY }}/tthsympa/slot:latest
+      - run: docker push rg.fr-par.scw.cloud/tthsympa/slot:latest
 
   deploy:
     name: Deploy Docker image
