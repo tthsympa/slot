@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Flex, Grid, GridItem } from '@chakra-ui/react'
 import OfficeButton from 'components/OfficeButton'
 
-import logo from 'assets/logo/logo-slot.svg'
+import logo from 'assets/logo/logo.png'
 
 const Offices = ({
   offices = [],
@@ -28,8 +28,11 @@ const Logo = () => (
   <GridItem colSpan={2}>
     <Flex align="center" justify="center" h="100%">
       <Link href="/">
-        logo here
-        <img src={logo} alt="scaleroom-logo" width="140px" />
+        <img
+          src={logo}
+          alt="slot-logo"
+          style={{ height: '55px', width: '55px' }}
+        />
       </Link>
     </Flex>
   </GridItem>

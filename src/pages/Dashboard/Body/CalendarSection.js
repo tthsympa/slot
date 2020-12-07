@@ -130,6 +130,15 @@ const Container = styled.div`
   .rbc-btn-group {
     button {
       border-color: ${darkBlack};
+      :hover, :focus {
+        color: ${white};
+      }
+    }
+    .rbc-active {
+      color: ${white};
+      :hover, :focus {
+        color: ${white};
+      }
     }
   }
   .rbc-toolbar-label {
