@@ -26,11 +26,13 @@ jobs:
 
       - name: Build & push Docker image
         uses: docker/build-push-action@v2
+        env:
+          REGISTRY: rg.fr-par.scw.cloud
         with:
           context: .
           file: ./Dockerfile
           load: true
-          tags: tthsympa/slot:latest
+          tags: ${{ env.REGISTRY }}/tthsympa/slot:latest
       - run: docker push rg.fr-par.scw.cloud/tthsympa/slot:latest
 
   deploy:
