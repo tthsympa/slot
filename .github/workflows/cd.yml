@@ -30,8 +30,8 @@ jobs:
           context: .
           file: ./Dockerfile
           pull: true
-          push: true
           tags: tthsympa/slot:latest
+        run: docker push ${{ env.REGISTRY }}/tthsympa/slot:latest
 
   deploy:
     name: Deploy Docker image
